@@ -1,24 +1,114 @@
 header{
+    font-size: 1em;
 
 }
 
 header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    font-size: 1em;
 
 }
 
 
 header nav .nav-right{
+    display: flex;
+    align-items: center;
 
 
 }
 
 header nav .nav-right a{
 
+    color: #444;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    font-size: 1.1em;
+
+}
+header nav .nav-left .register-login-btn{
+border: 1px solid #666;
+padding: 5px 8px;
+border-radius: 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+
+header nav .nav-left .register-login-btn i{
+
+    margin: 7px;
+    color: #444;
+    font-size: .9em;
+
+
+}
+header nav .nav-left .register-login-btn a{
+color: #444;
+margin: 0px 10px;
+font-size: .9em;
+}
+
+
+/* slider */
+
+
+.slider{
+
+    position: relative;
+    font-size: 1em;
+}
+.slider .slides{
+
+
+}
+
+.slider .slides .item{
+    position: relative;
+    display: none;
 
 }
 
 
-header nav .nav-left{
+.slider .slides .itemactive{
 
+    display: block;
+}
+
+.slider .slides .item  img{
+
+    width: 100%;
+
+}
+
+.slider .slides .item  span{
+    position: absolute;
+    z-index: 1;
+    color: black;
+    right: 10%;
+    top: 40%;
+}
+
+
+.slider .buttons{ 
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    z-index: 1;
+
+
+}
+
+.slider .buttons i{ 
+    color: white;
+    margin-right: 5px ;
+    cursor: pointer;
+}
+
+.slider .buttons i:hover{ 
+color: rgba(225, 255, 255, .4);
 
 }
